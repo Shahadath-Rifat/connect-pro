@@ -17,3 +17,7 @@
   --app-light-gray: #f9f9f9;
   --app-white: #fff;   
 }
+
+body {
+  background-color:#464852;
+}

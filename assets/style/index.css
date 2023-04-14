@@ -15,5 +15,200 @@
   --app-red-hover: #ff2846;
   --app-orange-text: #ff8e1c;
   --app-light-gray: #f9f9f9;
-  --app-white: #fff;   
+  --app-white: #fff;
+  --primary-color: #0891b2;
+  --primary-color-dark: #0e7490;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #f3f4f6;   
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container__left {
+  flex: 1;
+  background-color: #c3c3c3;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.content {
+  max-width: 450px;
+  padding: 1rem;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  margin: 1rem 0;
+}
+
+.header .register {
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.header .back__btn {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.form__content {
+  max-width: 350px;
+  margin: 4rem auto 0;
+}
+
+.form__content .form__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.form__content .form__subtitle {
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.form__content input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: var(--extra-light);
+}
+
+.form__content .forgot__password {
+  text-align: right;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  color: #000;
+}
+
+.form__content .wrong_pass {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  height: 20px;
+  color: #000;
+  padding: 2px;
+  margin-bottom: 15px;
+}
+
+.form__content .submit__btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 8px;
+}
+.form__content .submit__btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.form__content .bottom__line {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--extra-light);
+  margin: 2rem 0;
+}
+
+.footer__title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.social__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social__icons i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.social__icons i:hover {
+  color: var(--primary-color-dark);
+}
+
+.container__right {
+  display: flex;
+  flex: 1.3;
+  background: url(../image/mike-newbry-af5nNainXt4-unsplash.jpg) center center / cover no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.container__right::before {
+  content: "";
+  position: absolute;
+  height: 75%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to top, #000000, #00000000);
+}
+
+.image {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  gap: 1rem;
+  width: 80%;
+  max-width: 30rem;
+  color: #ffffff;
+}
+
+.image h3 {
+  font-size: 2rem;
+  position: relative;
+}
+
+
+
+.image p {
+  font-size: 1rem;
+}
+
+@media screen and (width < 750px) {
+  .container__right {
+    display: none;
+  }
 }
