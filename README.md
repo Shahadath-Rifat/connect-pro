@@ -2,6 +2,8 @@
 
 Hello there, This is ConnectPro which helps to connect with people. Why don't you have a try!
 
+Username: Rifat77 ----- Password: plok09! 
+
 ### Demo
 Click [here]( https://shahadath-rifat.github.io/connect-pro/) to test the website
 
